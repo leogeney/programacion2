@@ -1,7 +1,7 @@
 
 package com.claseufpso.poo;
 
-
+import people.Character;
 public class POO {
 
     public static void main(String[] args) {
@@ -13,29 +13,13 @@ public class POO {
       homero.saySomething();
       lisa.saySomething();
       bart.saySomething();
-    }
+      
+      Character apu = new Character ();
+        apu.setName("apu");
+        apu.setFrase("vuelvas prontos");
     
-    static class Character{
         
-    String name;
-    int age;
-    char gender;
-    String frase;
+        apu.saySomething();
+    }
+   }
 
-        public Character(String name, int age, char gender, String frase) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.frase = frase;
-            
-        }
-    
-    
-        void saySomething(){
-            System.out.println(this.frase + " " + this.name + " " + this.gender + " " + this.age);
-        }
-        
-        
-    
-    }
-}
